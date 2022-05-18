@@ -2,14 +2,20 @@
 
 require_once 'Select.php';
 
-$world = $_POST['search'];
+
+
+    $search = $_POST['search'];
+
 
 $select = new Select();
 
-$start = $select->search($world);
+$start = $select->search($search);
 
-$all = $select->searchReq($world);
+$all = $select->searchReq($search);
 
 $key = ['start' => $start, 'all' => $all];
+//var_dump($key);
+// var_dump($start);
+// var_dump($all);
 
-echo json_encode($key);
+echo json_encode($start);

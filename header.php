@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-<form action="" id="form" method="get">
+<form action="" id="search_form" method="get">
         <input type="text" id ='search' name="search" placeholder="votre texte ici">
-        <button type="submit" id="submit" valu"submit"></button>
+        <button type="submit" id="submit" value="submit">rechercher</button>
     </form>
 
   <div>
